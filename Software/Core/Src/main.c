@@ -24,6 +24,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "BSW/TaskScheduler/taskScheduler.h"
 
 /* USER CODE END Includes */
 
@@ -99,6 +100,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+
+  taskScheduler_init();
+  // TODO: enable interrupts
+  taskScheduler_main();
 
   /* USER CODE END 2 */
 
