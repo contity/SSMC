@@ -8,53 +8,53 @@
 #include "Framework/Scheduler/scheduler.h"
 #include "gpio.h"
 
-void task_x0(void)
+void task_2pow0(void)
 {
 
 }
 
-void task_x1(void)
+void task_2pow1(void)
 {
 
 }
 
-void task_x2(void)
+void task_2pow2(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_9);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
 }
 
-void task_x4(void)
+void task_2pow3(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_8);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_8);
 }
 
-void task_x8(void)
+void task_2pow4(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_7);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
 }
 
-void task_x16(void)
+void task_2pow5(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_6);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
 }
 
-void task_x32(void)
+void task_2pow6(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
 }
 
-void task_x64(void)
+void task_2pow7(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_4);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
 }
 
-void task_x128(void)
+void task_2pow8(void)
 {
-	LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_3);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
 }
 
-void task_x256(void)
+void task_2pow9(void)
 {
-	LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_15);
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_15);
 }
 

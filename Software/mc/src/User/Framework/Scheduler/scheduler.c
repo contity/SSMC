@@ -43,16 +43,16 @@ void scheduler_main(void)
 			scheduler.local.tick = scheduler.input.tick;
 
 			/* schedule tasks */
-			task_x0();
-			if( scheduler.local.count&0x01 ) task_x1();
-			else if( scheduler.local.count&0x02 ) task_x2();
-			else if( scheduler.local.count&0x04 ) task_x4();
-			else if( scheduler.local.count&0x08 ) task_x8();
-			else if( scheduler.local.count&0x10 ) task_x16();
-			else if( scheduler.local.count&0x20 ) task_x32();
-			else if( scheduler.local.count&0x40 ) task_x64();
-			else if( scheduler.local.count&0x80 ) task_x128();
-			else task_x256();
+			                                      task_2pow0();
+			if( scheduler.local.count&0x01 )      task_2pow1();
+			else if( scheduler.local.count&0x02 ) task_2pow2();
+			else if( scheduler.local.count&0x04 ) task_2pow3();
+			else if( scheduler.local.count&0x08 ) task_2pow4();
+			else if( scheduler.local.count&0x10 ) task_2pow5();
+			else if( scheduler.local.count&0x20 ) task_2pow6();
+			else if( scheduler.local.count&0x40 ) task_2pow7();
+			else if( scheduler.local.count&0x80 ) task_2pow8();
+			else                                  task_2pow9();
 
 			/* count up */
 			scheduler.local.count++;

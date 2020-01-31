@@ -13,15 +13,15 @@ extern void scheduler_main(void);
 
 extern void scheduler_ei_tickUp_ISR(void); /* Event Input from ISR */
 
-extern void task_x0(void);
-extern void task_x1(void);
-extern void task_x2(void);
-extern void task_x4(void);
-extern void task_x8(void);
-extern void task_x16(void);
-extern void task_x32(void);
-extern void task_x64(void);
-extern void task_x128(void);
-extern void task_x256(void);
+extern void task_2pow0(void);	// 1ms
+extern void task_2pow1(void);	// 2ms
+extern void task_2pow2(void);	// 4ms
+extern void task_2pow3(void);	// 8ms
+extern void task_2pow4(void);	// 16ms
+extern void task_2pow5(void);	// 32ms
+extern void task_2pow6(void);	// 64ms
+extern void task_2pow7(void);	// 128ms
+extern void task_2pow8(void);	// 256ms
+extern void task_2pow9(void);	// 512ms
 
 #endif /* SCHEDULER_H_ */
