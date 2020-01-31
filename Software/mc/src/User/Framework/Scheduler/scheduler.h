@@ -22,6 +22,5 @@ extern void task_2pow5(void);	// 32ms
 extern void task_2pow6(void);	// 64ms
 extern void task_2pow7(void);	// 128ms
 extern void task_2pow8(void);	// 256ms
-extern void task_2pow9(void);	// 512ms
 
 #endif /* SCHEDULER_H_ */

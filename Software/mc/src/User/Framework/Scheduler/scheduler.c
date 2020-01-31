@@ -52,7 +52,7 @@ void scheduler_main(void)
 			else if( scheduler.local.count&0x20 ) task_2pow6();
 			else if( scheduler.local.count&0x40 ) task_2pow7();
 			else if( scheduler.local.count&0x80 ) task_2pow8();
-			else                                  task_2pow9();
+			else ;
 
 			/* count up */
 			scheduler.local.count++;
