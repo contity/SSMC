@@ -8,7 +8,11 @@
 #ifndef APPLICATIONSOFTWARE_TOUCHKEY_TOUCHKEY_H_
 #define APPLICATIONSOFTWARE_TOUCHKEY_TOUCHKEY_H_
 
+#include "FrameWork/Common/types.h"
+
 extern void tkey_init(void);
 extern void tkey_task(void);
+
+extern uint16 tkey_getTouchLevel(uint8 keyIndex);
 
 #endif /* APPLICATIONSOFTWARE_TOUCHKEY_TOUCHKEY_H_ */
