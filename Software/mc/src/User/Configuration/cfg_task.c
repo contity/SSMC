@@ -6,15 +6,22 @@
  */
 
 #include "Framework/Scheduler/scheduler.h"
+#include "BasicSoftware/SystemTime/systemtime.h"
+#include "BasicSoftware/TouchKey/touchkey.h"
 #include "ApplicationSoftware/RotateLamp/rotatelamp.h"
-#include "usart.h"
-#include <stdio.h>
+#include "ApplicationSoftware/TestApp/testapp.h"
 
-unsigned int time_ms = 0u;
+void task_init(void)
+{
+	syti_init();
+	rola_init();
+	// app
+	tapp_init();
+}
 
 void task_2pow0(void)
 {
-	time_ms++;
+	syti_task();
 	rola_task1ms();
 }
 
@@ -49,6 +56,6 @@ void task_2pow7(void)
 
 void task_2pow8(void)
 {
-	printf("%u\r\n", time_ms);
+	tapp_task();
 }
 
