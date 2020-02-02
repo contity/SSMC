@@ -31,6 +31,8 @@ void scheduler_init(void)
 	scheduler.input.tick = 0u;
 	scheduler.local.tick = 0u;
 	scheduler.local.count = 0u;
+
+	task_init();
 }
 
 void scheduler_main(void)
