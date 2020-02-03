@@ -2,7 +2,7 @@
  * types.h
  *
  *  Created on: Jan 31, 2020
- *      Author: uid40789
+ *      Author: contity
  */
 
 #ifndef FRAMEWORK_COMMON_TYPES_H_
