@@ -8,6 +8,7 @@
 #include "Framework/Scheduler/scheduler.h"
 #include "BasicSoftware/SystemTime/systemtime.h"
 #include "BasicSoftware/TouchKey/touchkey.h"
+#include "BasicSoftware/PushButton/pushbutton.h"
 #include "ApplicationSoftware/RotateLamp/rotatelamp.h"
 #include "ApplicationSoftware/TestApp/testapp.h"
 
@@ -15,6 +16,7 @@ void task_init(void)
 {
 	syti_init();
 	rola_init();
+	pbut_init();
 //	tkey_init();
 	// app
 	tapp_init();
@@ -32,6 +34,7 @@ void task_2pow1(void)
 
 void task_2pow2(void)
 {
+	pbut_task4ms();
 }
 
 void task_2pow3(void)

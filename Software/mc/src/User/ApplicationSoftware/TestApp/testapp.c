@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "BasicSoftware/SystemTime/systemtime.h"
 #include "BasicSoftware/TouchKey/touchkey.h"
+#include "BasicSoftware/PushButton/pushbutton.h"
 
 uint32 cnt = 0u;
 
@@ -20,6 +21,10 @@ void tapp_init(void)
 void tapp_task(void)
 {
 	cnt++;
+
+	/* test for push button */
+	printf("%u: %u, %u, %u, %u\r\n", (uint)cnt,
+			pbut_getButton(0), pbut_getButton(1), pbut_getButton(2), pbut_getButton(3));
 
 #if 0
 	/* test for touch key */
