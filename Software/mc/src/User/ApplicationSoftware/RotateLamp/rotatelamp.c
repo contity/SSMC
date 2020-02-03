@@ -5,6 +5,7 @@
  *      Author: contity
  */
 
+#include "rotatelamp.h"
 #include "Framework/Common/types.h"
 #include "gpio.h"
 
@@ -41,3 +42,13 @@ void rola_task(void)
 	rola.step &= 0x07;
 	rola.out = (0x01u << rola.step);
 }
+
+void rola_start(ROLA_DIR dir)
+{
+	(void)dir;
+}
+
+void rola_stop(void)
+{
+}
+
