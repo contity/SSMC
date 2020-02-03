@@ -2,7 +2,7 @@
  * scheduler.c
  *
  *  Created on: Jan 31, 2020
- *      Author: uid40789
+ *      Author: contity
  */
 
 #include "scheduler.h"
@@ -45,15 +45,15 @@ void scheduler_main(void)
 			scheduler.local.tick = scheduler.input.tick;
 
 			/* schedule tasks */
-			                                      task_2pow0();
-			if( scheduler.local.count&0x01 )      task_2pow1();
-			else if( scheduler.local.count&0x02 ) task_2pow2();
-			else if( scheduler.local.count&0x04 ) task_2pow3();
-			else if( scheduler.local.count&0x08 ) task_2pow4();
-			else if( scheduler.local.count&0x10 ) task_2pow5();
-			else if( scheduler.local.count&0x20 ) task_2pow6();
-			else if( scheduler.local.count&0x40 ) task_2pow7();
-			else if( scheduler.local.count&0x80 ) task_2pow8();
+			                                      task_1ms();
+			     if( scheduler.local.count&0x01 ) task_2ms();
+			else if( scheduler.local.count&0x02 ) task_4ms();
+			else if( scheduler.local.count&0x04 ) task_8ms();
+			else if( scheduler.local.count&0x08 ) task_16ms();
+			else if( scheduler.local.count&0x10 ) task_32ms();
+			else if( scheduler.local.count&0x20 ) task_64ms();
+			else if( scheduler.local.count&0x40 ) task_128ms();
+			else if( scheduler.local.count&0x80 ) task_256ms();
 			else ;
 
 			/* count up */

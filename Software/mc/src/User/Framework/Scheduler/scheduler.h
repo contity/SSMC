@@ -2,7 +2,7 @@
  * scheduler.h
  *
  *  Created on: Jan 31, 2020
- *      Author: uid40789
+ *      Author: contity
  */
 
 #ifndef SCHEDULER_H_
@@ -13,15 +13,15 @@ extern void scheduler_main(void);
 
 extern void scheduler_ei_tickUp_ISR(void); /* Event Input from ISR */
 
-extern void task_init(void);    // init
-extern void task_2pow0(void);	// 1ms
-extern void task_2pow1(void);	// 2ms
-extern void task_2pow2(void);	// 4ms
-extern void task_2pow3(void);	// 8ms
-extern void task_2pow4(void);	// 16ms
-extern void task_2pow5(void);	// 32ms
-extern void task_2pow6(void);	// 64ms
-extern void task_2pow7(void);	// 128ms
-extern void task_2pow8(void);	// 256ms
+extern void task_init(void);    // init all tasks
+extern void task_1ms(void);
+extern void task_2ms(void);
+extern void task_4ms(void);
+extern void task_8ms(void);
+extern void task_16ms(void);
+extern void task_32ms(void);
+extern void task_64ms(void);
+extern void task_128ms(void);
+extern void task_256ms(void);
 
 #endif /* SCHEDULER_H_ */

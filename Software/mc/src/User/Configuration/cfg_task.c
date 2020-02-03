@@ -22,44 +22,44 @@ void task_init(void)
 	tapp_init();
 }
 
-void task_2pow0(void)
+void task_1ms(void)
 {
 	syti_task();
 	rola_task1ms();
 }
 
-void task_2pow1(void)
+void task_2ms(void)
 {
 }
 
-void task_2pow2(void)
+void task_4ms(void)
 {
 	pbut_task4ms();
 }
 
-void task_2pow3(void)
+void task_8ms(void)
 {
 }
 
-void task_2pow4(void)
+void task_16ms(void)
 {
 }
 
-void task_2pow5(void)
+void task_32ms(void)
 {
 }
 
-void task_2pow6(void)
+void task_64ms(void)
 {
 	rola_task();
 }
 
-void task_2pow7(void)
+void task_128ms(void)
 {
 //	tkey_task();
 }
 
-void task_2pow8(void)
+void task_256ms(void)
 {
 	tapp_task();
 }
