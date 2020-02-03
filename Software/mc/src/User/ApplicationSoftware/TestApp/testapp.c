@@ -21,9 +21,11 @@ void tapp_task(void)
 {
 	cnt++;
 
+#if 0
 	/* test for touch key */
 	printf("%u: %u, %u, %u, %u\r\n", (uint)cnt,
 			tkey_getTouchLevel(0), tkey_getTouchLevel(1), tkey_getTouchLevel(2), tkey_getTouchLevel(3));
+#endif
 
 #if 0
 	/* test for system time */

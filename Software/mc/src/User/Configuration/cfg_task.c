@@ -15,7 +15,7 @@ void task_init(void)
 {
 	syti_init();
 	rola_init();
-	tkey_init();
+//	tkey_init();
 	// app
 	tapp_init();
 }
@@ -53,7 +53,7 @@ void task_2pow6(void)
 
 void task_2pow7(void)
 {
-	tkey_task();
+//	tkey_task();
 }
 
 void task_2pow8(void)
