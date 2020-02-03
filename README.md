@@ -1,2 +1,2 @@
-# MCS
-Motion Control Study
+# SSMC
+Simple Simulation of Motion Control
