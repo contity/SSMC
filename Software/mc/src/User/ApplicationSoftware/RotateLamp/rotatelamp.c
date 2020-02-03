@@ -2,7 +2,7 @@
  * rotatelamp.c
  *
  *  Created on: Jan 31, 2020
- *      Author: uid40789
+ *      Author: contity
  */
 
 #include "Framework/Common/types.h"
