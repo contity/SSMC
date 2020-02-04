@@ -22,9 +22,11 @@ void tapp_task(void)
 {
 	cnt++;
 
+#if 0
 	/* test for push button */
 	printf("%u: %u, %u, %u, %u\r\n", (uint)cnt,
 			pbut_getButton(0), pbut_getButton(1), pbut_getButton(2), pbut_getButton(3));
+#endif
 
 #if 0
 	/* test for touch key */
