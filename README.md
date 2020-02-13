@@ -6,10 +6,10 @@ Simple Simulation of Motion Control
 
 ## How to check the hardware schematics
 
-Pleaase check in the Hardware folder.
+Please check in the Hardware folder.
 
-The hardware is designed with www.easyeda.cn.
+The hardware is designed with https://lceda.cn/
 
 ## How to launch the software project
 
-See README in software folder.
+Please check in Software/Tools folder.
