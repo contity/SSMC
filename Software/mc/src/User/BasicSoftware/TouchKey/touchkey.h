@@ -11,7 +11,7 @@
 #include "FrameWork/Common/types.h"
 
 extern void tkey_init(void);
-extern void tkey_task(void);
+extern void tkey_task4ms(void);
 
 extern uint16 tkey_getTouchLevel(uint8 keyIndex);
 

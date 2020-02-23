@@ -61,7 +61,7 @@ static void siro_task1ms(void)
 /* simulated rotator ========================================================= end */
 /* =============================================================================== */
 
-#include "BasicSoftware/PushButton/pushbutton.h"
+#include "BasicSoftware/TouchKey/touchkey.h"
 
 typedef struct
 {
@@ -82,12 +82,18 @@ void rola_init(void)
 	siro_init();
 }
 
+uint8 rola_getTouchKey(uint8 ch)
+{
+	uint16 level = tkey_getTouchLevel(ch);
+	return level>200? 2: 1;
+}
+
 void rola_task1ms(void)
 {
 	/* rotator input */
-	siro.powerPlus = pbut_getButton(0);
-	siro.powerMinus = pbut_getButton(1);
-	siro.extResist = (pbut_getButton(2)-1)*2+(pbut_getButton(3)-1)*4;
+	siro.powerPlus = rola_getTouchKey(0);
+	siro.powerMinus = rola_getTouchKey(1);
+	siro.extResist = (rola_getTouchKey(2)-1)*2+(rola_getTouchKey(3)-1)*4;
 	siro.intResist = 1;
 
 	/* simulated rotator */

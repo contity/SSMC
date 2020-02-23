@@ -16,8 +16,7 @@ void task_init(void)
 {
 	syti_init();
 	rola_init();
-	pbut_init();
-//	tkey_init();
+	tkey_init();
 	// app
 	tapp_init();
 }
@@ -34,7 +33,7 @@ void task_2ms(void)
 
 void task_4ms(void)
 {
-	pbut_task4ms();
+	tkey_task4ms();
 }
 
 void task_8ms(void)
@@ -56,7 +55,6 @@ void task_64ms(void)
 
 void task_128ms(void)
 {
-//	tkey_task();
 }
 
 void task_256ms(void)

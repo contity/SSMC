@@ -48,7 +48,7 @@ void tkey_init(void)
 	HAL_TIM_Base_Start(&htim3);
 }
 
-void tkey_task(void)
+void tkey_task4ms(void)
 {
 	switch(tkey.cycle)
 	{
