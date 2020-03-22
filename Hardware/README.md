@@ -1,5 +1,9 @@
 Hardware History
 
+*Hardware A3 with changes*
+
+![Alt HW_A3](pics/A3_Changes.PNG "Hardware A3")
+
 *Hardware A2 with changes*
 
 ![Alt HW_A2](pics/A2_Changes.PNG "Hardware A2")
